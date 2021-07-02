@@ -1,0 +1,22 @@
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #282828;
+    }
+      
+      li {
+        float: right;
+        border-right: 1px solid #CECECE;
+      }
+      
+      li a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: Helvetica;
+      }
