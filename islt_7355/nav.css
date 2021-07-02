@@ -9,15 +9,6 @@ nav {
         background-color: #282828;
 }
 
-nav p {
-        font-family: Helvetica;
-        color: #222;
-        font-size: 24px;
-        line-height: 55px;
-        float: right;
-        padding: 14px 16px;
-}
-
 nav ul {
     float: right;
 }
