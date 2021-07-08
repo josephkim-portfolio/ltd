@@ -1,3 +1,18 @@
+/* 
+***************************************************
+
+Style CSS for Joseph Kim's ISLT portoflio.
+
+Change Log: 
+-Added grid css layout.
+-Added responsive image.
+-Added media query.
+
+Tested:  July 8, 2021; Passed on Firefox and Chrome browsers.
+
+***************************************************
+*/
+
 .ChangeClassDarkGreen {color: #004730;}
 .ChangeClassGreen {color: #006443;}
 
