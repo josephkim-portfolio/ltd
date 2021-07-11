@@ -1,5 +1,4 @@
 <!--
-
 *****************************************************************************
 
 Title:  Projects Page
@@ -14,49 +13,91 @@ Class: ISLT 7355 Web Design & Development | Summer 2021
 
 Developed: July 2021
 
-Tested:  July 2, 2021; Passed on Firefox and Chrome browsers.
+Tested:  July 11, 2021; Passed on Firefox and Chrome browsers.
+
+Change Log:
+-Added responsive navigation bar.
+-Added grid css layout.
+-Added multiple screen size media queries.
 
 ******************************************************************************
-
 -->
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-               <meta charset="utf-8">
-               <title>Projects</title>
-               <link rel="stylesheet" href="style.css">
-               <link rel="stylesheet" href="nav.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="projects.html">PROJECTS</a>
-                <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                </ul>
-            </li>
-            <li><a href="reflection.html">REFLECTION</a></li>
-            <li><a href="#contact.html">CONTACT</a></li>
-            <li><a href="#experience.html">EXPERIENCE</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1></h1>
-        <p></p>
-    </header>
+    <!-- Navigation Start -->
+        <nav>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a class="active" href="projects.html">PROJECTS</a>
+                    <ul>
+                        <li class="no-mobile"><a href="#">Link 1</a></li>
+                        <li class="no-mobile"><a href="#">Link 2</a></li>
+                        <li class="no-mobile"><a href="#">Link 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="reflection.html">REFLECTION</a></li>
+                <li class="lastMobile"><a href="#contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    <!-- Navigation End -->
+    
     <main>
-        <section>
-            <h2></h2>
-            <p></p>
-        </section>
+    <!-- Grid Start -->
+    <div class="grid">
+        <div class="box1"> 
+            <h1>Projects</h1>
+        </div>
+
+        <div class="box2">
+            <h2>Artifact 1</h2>
+            <p>Description of Artifact 1.</p>
+        </div>
+
+        <div class="box3">
+            <h2>Artifact 1</h2>
+            <p>Embed Artifact 1.</p>
+        </div>
+
+        <div class="box4">
+            <h2>Artifact 2</h2>
+            <p>Description of Artifact 2.</p>
+        </div>
+
+        <div class="box5">
+            <h2>Artifact 2</h2>
+            <p>Embed Artifact 2.</p>
+        </div>
+
+        <div class="box6">
+            <h2>Artifact 3</h2>
+            <p>Description of Artifact 3.</p>
+        </div>
+
+        <div class="box7">
+            <h2>Artifact 3</h2>
+            <p>Embed Artifact 3</p>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            <br />
+        © 2021 Joseph Kim  |  Email: jhkdk4@mail.missouri.edu
+        </footer>
+    </div>
+    <!-- Grid End -->
     </main>
-    <footer>
-        <br />
-    © 2021 Joseph Kim  |  Email: jhkdk4@mail.missouri.edu
-    </footer> 
 </body>
 </html>

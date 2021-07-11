@@ -1,5 +1,4 @@
 ﻿<!--
-
 *****************************************************************************
 
 Title:  Home Page
@@ -14,58 +13,73 @@ Class: ISLT 7355 Web Design & Development | Summer 2021
 
 Developed: July 2021
 
-Tested:  July 2, 2021; Passed on Firefox and Chrome browsers.
+Tested:  July 11, 2021; Passed on Firefox and Chrome browsers.
+
+Change Log:
+-Added responsive navigation bar.
+-Added grid css layout.
+-Added multiple screen size media queries.
 
 ******************************************************************************
-
 -->
 
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
                <meta charset="utf-8">
-               <title>Joseph Kim's Portfolio</title>
+               <meta name="viewport" content="width=device-width, initial-scale=1">
+               <title>Joseph Kim's ISLT Portfolio</title>
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="projects.html">PROJECTS</a>
-                <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                </ul>
-            </li>
-            <li><a href="reflection.html">REFLECTION</a></li>
-            <li><a href="#contact.html">CONTACT</a></li>
-            <li><a href="#experience.html">EXPERIENCE</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1 class="ChangeClassDarkGreen">Welcome to Joseph's ISLT Portfolio</h1>
-        <p></p>
-    </header>
-    <main>
-        <section>
-            <h2 class="ChangeClassGreen">Purpose</h2>
-            <p>This portfolio showcases selected artifacts developed throughout my Educational Specialist in the Information Science and Learning Technologies (ISLT) program at the University of Missouri. Graduates of the program must demonstrate three competencies by the end of their coursework. For each competency, one relevant artifact shall be showcased, with an accompanying reflection.</p>
-        </section>
-        <section>
-            <h2 class="ChangeClassGreen">Competencies</h2>
-            <p>The three ISLT competencies entail:</p>
-            <ol>
-                <li>To provide students with experiences to develop theory-grounded and research-based competencies for the innovative, aesthetic, effective and sustainable design/development and management of technologies for learning opportunities and systems.</li>
-                <li>To provide students with experiences to develop skills in data collection, analysis and evaluation for reflecting on and applying to the design/development of learning opportunities and systems.</li>
-                <li>To provide students with experiences to become socially responsible, reflective/sensitive on the interaction of technologies & society and act ethically in response to current and future challenges of emerging technologies for learning.</li>
-            </ol>
-        </section>
+    <!-- Navigation Start -->
+        <nav>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="projects.html">PROJECTS</a>
+                    <ul>
+                        <li class="no-mobile"><a href="#">Link 1</a></li>
+                        <li class="no-mobile"><a href="#">Link 2</a></li>
+                        <li class="no-mobile"><a href="#">Link 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="reflection.html">REFLECTION</a></li>
+                <li class="lastMobile"><a href="#contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <!-- Navigation End -->
+
+        <main>
+        <!-- Grid Start -->
+        <div class="grid">
+            <div class="box1">
+                <header>
+                    <h1 class="ChangeClassDarkGreen">Joseph's ISLT Portfolio</h1>
+                </header>
+            </div>
+            
+            <div class="box3">
+                <img src="Home%20image.png" alt="Decorative image conveying a digital learning environment. Image contains 3 cartoon students around a web browser and shapes.">
+            </div>
+
+            <div class="box2">
+                <h2 class="ChangeClassGreen">Welcome!</h2>
+                <p>This portfolio showcases selected artifacts developed throughout my Educational Specialist in the Information Science and Learning Technologies (ISLT) program at the University of Missouri. Graduates of the program must demonstrate three competencies by the end of their coursework. For each competency, one relevant artifact shall be showcased, with an accompanying reflection.</p>
+            </div>
+
+            <div class="box4">
+                <p>To learn more about my professional goals and education, visit my About page. The Projects page will showcase artifacts I have crafted throughout my ISLT program and how they align with the program’s competencies. The Reflection page will chronicle my career journey to the field of instructional design for higher education. Please feel free to reach me via my Contact page.</p>
+            </div>
+        <!-- Footer -->
+        <footer>
+            <p><br />© 2021 Joseph Kim  |  Email: jhkdk4@mail.missouri.edu</p>
+        </footer>
+        </div> 
+    <!-- Grid End -->
     </main>
-<footer>
-    <p><br />© 2021 Joseph Kim  |  Email: jhkdk4@mail.missouri.edu</p>
-</footer> 
 </body>
 </html>

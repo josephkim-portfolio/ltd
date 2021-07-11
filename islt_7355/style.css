@@ -7,8 +7,9 @@ Change Log:
 -Added grid css layout.
 -Added responsive image.
 -Added media query.
+-Added multiple screen size media queries.
 
-Tested:  July 8, 2021; Passed on Firefox and Chrome browsers.
+Tested:  July 11, 2021; Passed on Firefox and Chrome browsers.
 
 ***************************************************
 */
@@ -38,20 +39,28 @@ h4.FirstLetter::first-letter {
     display: grid;
     grid-template-columns: [content-start] 2fr [content-end];
     grid-template-rows: auto [content-start] auto [content-end];
-    grid-gap: 30px;
+    grid-gap: 10px;
 }
 
-@media (min-width: 640px) {
+/* Multiple screen size Media Queries START. Inspired by: https://youtu.be/fA1NW-T1QXc */
+@media screen and (min-width: 640px) {
     .grid {
         grid-template-columns: 2fr [content-start] 2fr [content-end];
+    }
+
+    .boxcenter {
+        grid-column: 1 /3;
+        align-self: center;
+        justify-self: center;
+        max-width: 640px;
     }
 
     .box1 {
         grid-column: 1 / 3;
         align-self: center;
-        justify-self: center;
+        justify-self: left;
     }
-    
+
     .box2 {
         grid-column: 1;
         grid-row: 2;
@@ -87,6 +96,13 @@ h4.FirstLetter::first-letter {
         justify-self: stretch;
     }
 
+    .box7 {
+        grid-column: 2;
+        grid-row: 4;
+        align-self: center;
+        justify-self: stretch;
+    }
+
     footer {
         grid-column: 1 / 3;
         grid-row: 5;
@@ -96,8 +112,58 @@ h4.FirstLetter::first-letter {
 
 }
 
+@media screen and (max-width:959px){
+    .grid{
+        width:100%;
+    }
+    #left-column{
+        width:70%;
+    }
+    #right-column{
+        width:30%;
+    }
+    img{
+        width:60%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width:640px){
+    #left-column{
+        width:100%;
+    }
+    #right-column{
+        width:100%;
+    }
+    img{
+        width:30%;
+        height: auto;
+    }
+    .grid{
+        font-size: 85%;
+    }
+    footer{
+        font-size: 85%;
+    }
+}
+
+@media screen and (max-width:320px){
+    .grid{
+        width:320px;
+        font-size: 75%;
+    }
+    img{   
+        width:30%;
+        height: auto;
+    }
+    footer{
+        font-size: 75%;
+    }
+}
+/* Multiple screen size Media Queries END */
+
 img {
-    border: 1px solid;
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
 }

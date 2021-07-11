@@ -1,7 +1,5 @@
 <!--
-
 *****************************************************************************
-
 Title:  About Page
 
 Use:  About page for ISLT portfolio.
@@ -14,45 +12,50 @@ Class: ISLT 7355 Web Design & Development | Summer 2021
 
 Developed: July 2021
 
-Tested:  July 8, 2021; Passed on Firefox and Chrome browsers.
+Tested:  July 11, 2021; Passed on Firefox and Chrome browsers.
 
 Change Log:
--Changed to grid css layout.
--Layout is responsive.
--Added image. Image has responsive code in stylesheet.
+-Added responsive navigation bar.
+-Added grid css layout.
+-Added multiple screen size media queries.
 
 ******************************************************************************
-
 -->
 
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="projects.html">PROJECTS</a>
-                <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                </ul>
-            </li>
-            <li><a href="reflection.html">REFLECTION</a></li>
-            <li><a href="#contact.html">CONTACT</a></li>
-            <li><a href="#experience.html">EXPERIENCE</a></li>
-        </ul>
-    </nav>
+    <!-- Navigation Start -->
+        <nav>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a class="active" href="about.html">ABOUT</a></li>
+                <li><a href="projects.html">PROJECTS</a>
+                    <ul>
+                        <li class="no-mobile"><a href="#">Link 1</a></li>
+                        <li class="no-mobile"><a href="#">Link 2</a></li>
+                        <li class="no-mobile"><a href="#">Link 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="reflection.html">REFLECTION</a></li>
+                <li class="lastMobile"><a href="#contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    <!-- Navigation End -->
+    
     <main>
+    <!-- Grid Start -->
     <div class="grid">
-        
         <div class="box1">
             <h1>Joseph Kim's ISLT Portfolio</h1>
         </div>
@@ -67,7 +70,7 @@ Change Log:
         </div>
         
         <div class="box3">
-            <img src="Profile%20-%20Joseph.jpg" alt="Profile image of Joseph Kim">
+            <img src="Profile%20-%20Joseph.png" alt="Profile image of Joseph Kim">
         </div>
         
         <div class="box4">
@@ -92,7 +95,8 @@ Change Log:
             <h2>Resume</h2>
             <a href="Resume%20-%20Joseph%20Kim.pdf">Resume - Joseph Kim</a>
         </div>
-
+        
+        <!-- Footer -->
         <footer>
             <p><br />
             © 2021 Joseph Kim  |  Email: jhkdk4@mail.missouri.edu
@@ -100,6 +104,7 @@ Change Log:
             </p>
         </footer> 
     </div>
+    <!-- Grid End -->
     </main>
 </body>
 </html>
