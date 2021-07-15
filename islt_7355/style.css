@@ -17,6 +17,10 @@ Tested:  July 11, 2021; Passed on Firefox and Chrome browsers.
 .ChangeClassDarkGreen {color: #004730;}
 .ChangeClassGreen {color: #006443;}
 
+.font-caveat {
+    font: "Caveat", cursive;
+}
+
 p.FirstLetter::first-letter {
         font-weight: bold;
         font-size: x-large;
