@@ -13,12 +13,13 @@ Class: ISLT 7355 Web Design & Development | Summer 2021
 
 Developed: July 2021
 
-Tested:  July 11, 2021; Passed on Firefox and Chrome browsers.
+Tested:  July 15, 2021; Passed on Firefox and Chrome browsers.
 
 Change Log:
 -Added responsive navigation bar.
 -Added grid css layout.
 -Added multiple screen size media queries.
+-Added footer icons, footer background, favicon.
 
 ******************************************************************************
 -->
@@ -28,9 +29,10 @@ Change Log:
 <head>
                <meta charset="utf-8">
                <meta name="viewport" content="width=device-width, initial-scale=1">
-               <title>Joseph Kim's ISLT Portfolio</title>
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
+               <title>Joseph Kim's ISLT Portfolio</title>
+               <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
     <!-- Navigation Start -->
@@ -74,10 +76,22 @@ Change Log:
             <div class="box4">
                 <p>To learn more about my professional goals and education, visit my About page. The Projects page will showcase artifacts I have crafted throughout my ISLT program and how they align with the program’s competencies. The Reflection page will chronicle my career journey to the field of instructional design for higher education. Please feel free to reach me via my Contact page.</p>
             </div>
+        
         <!-- Footer -->
-        <footer>
-            <p><br />© 2021 Joseph Kim  |  Email: jhkdk4@mail.missouri.edu</p>
-        </footer>
+        <footer class="footer-box">
+            <p><br /><br />
+            © 2021 Joseph Kim &nbsp;| &nbsp;
+            <a href="mailto:jhkdk4@mail.missouri.edu">
+                <img class="icon" src="images/email_icon.png" alt="Email icon">
+                jhkdk4@mail.missouri.edu</a> &nbsp;| &nbsp;
+            <img class="icon" src="images/phone_icon.png" alt="Phone icon"> 012.345.6789
+            <p id="footer-hiddentext">
+                <a target="_blank" href="https://icons8.com/icon/85500/mail">Mail</a> and 
+                <a target="_blank" href="https://icons8.com/icon/jShwZ2RCyPSO/phone">phone</a>
+                icons by Icons8. Bulb image created with <a target="_blank" href="https://www.canva.com">canva.com.</a>
+            </p>
+        </footer> 
+
         </div> 
     <!-- Grid End -->
     </main>
