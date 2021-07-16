@@ -12,12 +12,15 @@ Class: ISLT 7355 Web Design & Development | Summer 2021
 
 Developed: July 2021
 
-Tested:  July 11, 2021; Passed on Firefox and Chrome browsers.
+Tested:  July 15, 2021; Passed on Firefox and Chrome browsers.
 
 Change Log:
 -Added responsive navigation bar.
 -Added grid css layout.
 -Added multiple screen size media queries.
+-Added Google font 'Bad Script' for blockquote.
+-Added footer icons & background
+-Added media print in style.css, made footer class.
 
 ******************************************************************************
 -->
@@ -28,7 +31,7 @@ Change Log:
     <meta charset="utf-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About</title>
     <link rel="stylesheet" href="style.css">
@@ -78,20 +81,16 @@ Change Log:
         
         <div class="box4">
             <h2>Education</h2>
-            <p><strong>CUNY City College of New York</strong>
-            <br/>
-            B.A. English
-            </p>
-            <p><strong>University of Missouri</strong>
-            <br/>
-            Ed.S Information Science and Learning Technologies - Anticipated 2021
-            </p>
+            <ul>
+                <li>B.A. English &nbsp;| &nbsp;CUNY City College of New York</li>
+                <li>Ed.S Information Science and Learning Technologies - Anticipated 2021 &nbsp;| &nbsp;University of Missouri</li>
+            </ul>
         </div>
         
         <div class="box5">
             <h2>A place in the world</h2>
-            <p class="font-caveat">“Education at its best... is about empowerment, liberation, transcendence, about renewing the vitality of life. It is about finding and claiming ourselves and our place in the world.”</p>
-            <p>Parker Palmer, cited by Bell Hooks in <em>Teaching Community: A Pedagogy of Hope</em></p>
+            <p class="font-quotes">“Education at its best... is about empowerment, liberation, transcendence, about renewing the vitality of life. It is about finding and claiming ourselves and our place in the world.”</p>
+            <p class="font-quotes">Parker Palmer, cited by Bell Hooks in <em>Teaching Community: A Pedagogy of Hope</em></p>
         </div>
 
         <div class="box6">
@@ -100,10 +99,17 @@ Change Log:
         </div>
         
         <!-- Footer -->
-        <footer>
-            <p><br />
-            © 2021 Joseph Kim  |  Email: jhkdk4@mail.missouri.edu
-            <br />
+        <footer class="footer-box">
+            <p><br /><br />
+            © 2021 Joseph Kim &nbsp;| &nbsp;
+            <a href="mailto:jhkdk4@mail.missouri.edu">
+                <img class="icon" src="images/email_icon.png" alt="Email icon">
+                jhkdk4@mail.missouri.edu</a> &nbsp;| &nbsp;
+            <img class="icon" src="images/phone_icon.png" alt="Phone icon"> 012.345.6789
+            <p id="footer-hiddentext">
+                <a target="_blank" href="https://icons8.com/icon/85500/mail">Mail</a> and 
+                <a target="_blank" href="https://icons8.com/icon/jShwZ2RCyPSO/phone">phone</a>
+                icons by Icons8. Bulb image created with <a target="_blank" href="https://www.canva.com">canva.com.</a>
             </p>
         </footer> 
     </div>

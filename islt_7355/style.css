@@ -8,8 +8,10 @@ Change Log:
 -Added responsive image.
 -Added media query.
 -Added multiple screen size media queries.
+-Added print formatting.
+-Added footer-box class with background styles.
 
-Tested:  July 11, 2021; Passed on Firefox and Chrome browsers.
+Tested:  July 15, 2021; Passed on Firefox and Chrome browsers.
 
 ***************************************************
 */
@@ -17,8 +19,17 @@ Tested:  July 11, 2021; Passed on Firefox and Chrome browsers.
 .ChangeClassDarkGreen {color: #004730;}
 .ChangeClassGreen {color: #006443;}
 
-.font-caveat {
-    font: "Caveat", cursive;
+.font-quotes {
+    width:100%;
+    max-width:960px;
+    font-family: 'Bad Script', cursive;
+    text-shadow:1px 1px 0 rgba(0,0,0,.2);
+    text-align:center;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
 }
 
 p.FirstLetter::first-letter {
@@ -107,11 +118,16 @@ h4.FirstLetter::first-letter {
         justify-self: stretch;
     }
 
-    footer {
+    .footer-box {
         grid-column: 1 / 3;
         grid-row: 5;
         align-self: center;
         justify-self: center;
+        text-align: center;
+        background-image: url("images/BulbBanner.png");
+        background-repeat: no-repeat;
+        background-size: 140px 50px;
+        background-position: top;
     }
 
 }
@@ -130,7 +146,6 @@ h4.FirstLetter::first-letter {
         width:60%;
         height: auto;
     }
-
 }
 
 @media screen and (max-width:640px){
@@ -170,4 +185,63 @@ h4.FirstLetter::first-letter {
 img {
     max-width: 80%;
     height: auto;
+}
+
+/* Print adjustments */
+
+@media print {
+    * {
+        color: #000 !important;
+        text-shadow: none !important;
+        font-family: Garamond, serif;
+    }
+
+    /* HIDDEN ELEMENTS */
+    img {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    .box6{
+        display: none;
+    }
+
+    #footer-hiddentext{
+        display: none;
+    }
+
+    /* TYPOGRAPHY FOR PRINT */
+    body 
+        {
+        font-family: Garamond, serif;
+        font-size: 14pt;
+        background: none;
+        color: #000;
+    }
+
+    /* LAYOUT FOR PRINT */
+    footer {
+        width: 100%;
+        border: none;
+        padding: 0;
+        margin: 0;
+        color: #000 !important;
+        text-align: center;
+    }
+
+    .box5{
+        text-align: center;
+        width: 100%;
+    }
+
+    @page {
+        margin: 1in;
+    }
 }
