@@ -12,7 +12,7 @@ Class: ISLT 7355 Web Design & Development | Summer 2021
 
 Developed: July 2021
 
-Tested:  July 15, 2021; Passed on Firefox and Chrome browsers.
+Tested:  July 18, 2021; Passed on Firefox and Chrome browsers.
 
 Change Log:
 -Added responsive navigation bar.
@@ -21,6 +21,10 @@ Change Log:
 -Added Google font 'Bad Script' for blockquote.
 -Added footer icons & background
 -Added media print in style.css, made footer class.
+-Added video resume.
+-Added nav dropdown menu links.
+-Added font formatting for headers and paragraphs.
+-Added favicon.
 
 ******************************************************************************
 -->
@@ -31,11 +35,11 @@ Change Log:
     <meta charset="utf-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Lora:ital@1&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
+    <title>About</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
@@ -49,9 +53,9 @@ Change Log:
                 <li><a class="active" href="about.html">ABOUT</a></li>
                 <li><a href="projects.html">PROJECTS</a>
                     <ul>
-                        <li class="no-mobile"><a href="#">Link 1</a></li>
-                        <li class="no-mobile"><a href="#">Link 2</a></li>
-                        <li class="no-mobile"><a href="#">Link 3</a></li>
+                        <li class="no-mobile"><a href="projects.html#competency1">Competency 1</a></li>
+                        <li class="no-mobile"><a href="projects.html#competency2">Competency 2</a></li>
+                        <li class="no-mobile"><a href="projects.html#competency3">Competency 3</a></li>
                     </ul>
                 </li>
                 <li><a href="reflection.html">REFLECTION</a></li>
@@ -64,12 +68,12 @@ Change Log:
     <!-- Grid Start -->
     <div class="grid">
         <div class="box1">
-            <h1>Joseph Kim's ISLT Portfolio</h1>
+            <h1 class="ChangeClassDarkGreen font-header">Joseph Kim's ISLT Portfolio</h1>
         </div>
         
         <div class="box2">
-            <h2>About</h2>  
-            <p>My name is Joseph Kim, and I am a student in the Information Science and Learning Technologies program at the University of Missouri.
+            <h2 class="ChangeClassDarkGreen font-header">About</h2>  
+            <p class="font-para">My name is Joseph Kim, and I am a student in the Information Science and Learning Technologies program at the University of Missouri.
                 My educational goals seek to develop my competencies in the field of instructional design in higher education. I aspire to collaborate
                 with instructors to develop meaningful and creative online learning experiences for students. This includes helping teachers create 
                 engaging content, scaffolded activities, and aligned assessments. Additionally, I seek to utilize my graphic design, video editing, and 
@@ -81,41 +85,41 @@ Change Log:
         </div>
         
         <div class="box4">
-            <h2>Education</h2>
-            <ul>
+            <h2 class="ChangeClassDarkGreen font-header">Education</h2>
+            <ul class="font-para">
                 <li>B.A. English &nbsp;| &nbsp;CUNY City College of New York</li>
                 <li>Ed.S Information Science and Learning Technologies - Anticipated 2021 &nbsp;| &nbsp;University of Missouri</li>
             </ul>
         </div>
         
         <div class="box5">
-            <h2>A place in the world</h2>
+            <h2 class="ChangeClassDarkGreen font-header">Our place in the world</h2>
             <p class="font-quotes">“Education at its best... is about empowerment, liberation, transcendence, about renewing the vitality of life. It is about finding and claiming ourselves and our place in the world.”</p>
             <p class="font-quotes">Parker Palmer, cited by Bell Hooks in <em>Teaching Community: A Pedagogy of Hope</em></p>
         </div>
 
         <div class="box6">
-            <h2>Resume</h2>
+            <h2 class="ChangeClassDarkGreen font-header">Resume</h2>
             <a href="Resume%20-%20Joseph%20Kim.pdf">Resume - Joseph Kim</a>
         </div>
 
         <div class="box7">
-            <h2>Video Resume</h2>
+            <h2 class="ChangeClassDarkGreen font-header">Video Resume</h2>
             <iframe width="480" height="270" src="https://www.powtoon.com/embed/dlhRD7vF6rF/" frameborder="0" allowfullscreen></iframe>
         </div>
         
         <!-- Footer -->
         <footer class="footer-box">
-            <p><br /><br />
+            <p class="font-para"><br /><br />
             © 2021 Joseph Kim &nbsp;| &nbsp;
             <a href="mailto:jhkdk4@mail.missouri.edu">
                 <img class="icon" src="images/email_icon.png" alt="Email icon">
                 jhkdk4@mail.missouri.edu</a> &nbsp;| &nbsp;
             <img class="icon" src="images/phone_icon.png" alt="Phone icon"> 012.345.6789
-            <p id="footer-hiddentext">
+            <p id="footer-hiddentext" class="font-para">
                 <a target="_blank" href="https://icons8.com/icon/85500/mail">Mail</a> and 
                 <a target="_blank" href="https://icons8.com/icon/jShwZ2RCyPSO/phone">phone</a>
-                icons by Icons8. Bulb image created with <a target="_blank" href="https://www.canva.com">canva.com.</a>
+                icons by Icons8. Bulb image created with <a target="_blank" href="https://www.canva.com">canva.com</a>.
             </p>
         </footer> 
     </div>

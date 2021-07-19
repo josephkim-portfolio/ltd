@@ -13,13 +13,17 @@ Class: ISLT 7355 Web Design & Development | Summer 2021
 
 Developed: July 2021
 
-Tested:  July 15, 2021; Passed on Firefox and Chrome browsers.
+Tested:  July 18, 2021; Passed on Firefox and Chrome browsers.
 
 Change Log:
 -Added responsive navigation bar.
 -Added grid css layout.
 -Added multiple screen size media queries.
 -Added footer icons, footer background, favicon.
+-Added nav dropdown menu links.
+-Added footer images.
+-Added font formatting for headers and paragraphs.
+Added favicon.
 
 ******************************************************************************
 -->
@@ -28,6 +32,9 @@ Change Log:
 <html lang="en-US">
 <head>
                <meta charset="utf-8">
+               <link rel="preconnect" href="https://fonts.googleapis.com">
+               <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+               <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Lora:ital@1&display=swap" rel="stylesheet">
                <meta name="viewport" content="width=device-width, initial-scale=1">
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
@@ -44,9 +51,9 @@ Change Log:
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="projects.html">PROJECTS</a>
                     <ul>
-                        <li class="no-mobile"><a href="#">Link 1</a></li>
-                        <li class="no-mobile"><a href="#">Link 2</a></li>
-                        <li class="no-mobile"><a href="#">Link 3</a></li>
+                        <li class="no-mobile"><a href="projects.html#competency1">Competency 1</a></li>
+                        <li class="no-mobile"><a href="projects.html#competency2">Competency 2</a></li>
+                        <li class="no-mobile"><a href="projects.html#competency3">Competency 3</a></li>
                     </ul>
                 </li>
                 <li><a href="reflection.html">REFLECTION</a></li>
@@ -60,7 +67,7 @@ Change Log:
         <div class="grid">
             <div class="box1">
                 <header>
-                    <h1 class="ChangeClassDarkGreen">Joseph's ISLT Portfolio</h1>
+                    <h1 class="ChangeClassDarkGreen font-header">Joseph's ISLT Portfolio</h1>
                 </header>
             </div>
             
@@ -69,26 +76,26 @@ Change Log:
             </div>
 
             <div class="box2">
-                <h2 class="ChangeClassGreen">Welcome!</h2>
-                <p>This portfolio showcases selected artifacts developed throughout my Educational Specialist in the Information Science and Learning Technologies (ISLT) program at the University of Missouri. Graduates of the program must demonstrate three competencies by the end of their coursework. For each competency, one relevant artifact shall be showcased, with an accompanying reflection.</p>
+                <h2 class="ChangeClassGreen font-header">Welcome!</h2>
+                <p class="font-para">This portfolio showcases selected artifacts developed throughout my Educational Specialist in the Information Science and Learning Technologies (ISLT) program at the University of Missouri. Graduates of the program must demonstrate three competencies by the end of their coursework. For each competency, one relevant artifact shall be showcased, with an accompanying reflection.</p>
             </div>
 
             <div class="box4">
-                <p>To learn more about my professional goals and education, visit my About page. The Projects page will showcase artifacts I have crafted throughout my ISLT program and how they align with the program’s competencies. The Reflection page will chronicle my career journey to the field of instructional design for higher education. Please feel free to reach me via my Contact page.</p>
+                <p class="font-para">To learn more about my professional goals and education, visit my About page. The Projects page will showcase artifacts I have crafted throughout my ISLT program and how they align with the program’s competencies. The Reflection page will chronicle my career journey to the field of instructional design for higher education. Please feel free to reach me via my Contact page.</p>
             </div>
         
         <!-- Footer -->
         <footer class="footer-box">
-            <p><br /><br />
+            <p class="font-para"><br /><br />
             © 2021 Joseph Kim &nbsp;| &nbsp;
             <a href="mailto:jhkdk4@mail.missouri.edu">
                 <img class="icon" src="images/email_icon.png" alt="Email icon">
                 jhkdk4@mail.missouri.edu</a> &nbsp;| &nbsp;
             <img class="icon" src="images/phone_icon.png" alt="Phone icon"> 012.345.6789
-            <p id="footer-hiddentext">
+            <p id="footer-hiddentext" class="font-para">
                 <a target="_blank" href="https://icons8.com/icon/85500/mail">Mail</a> and 
                 <a target="_blank" href="https://icons8.com/icon/jShwZ2RCyPSO/phone">phone</a>
-                icons by Icons8. Bulb image created with <a target="_blank" href="https://www.canva.com">canva.com.</a>
+                icons by Icons8. Bulb image created with <a target="_blank" href="https://www.canva.com">canva.com</a>.
             </p>
         </footer> 
 

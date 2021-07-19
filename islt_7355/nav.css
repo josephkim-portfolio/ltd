@@ -1,6 +1,6 @@
 /* Author: Joseph Kim */
 /* Use: Navigation stylesheet for ISLT Portfolio */
-/* Tested: July 15, 2021 */
+/* Tested: July 18, 2021 */
 /* Change Log: Added responsive nav bar. */
 
 /* Label inspired by: https://youtu.be/xMTs8tAapnQ */
@@ -68,12 +68,12 @@ nav ul li:hover ul {
 }
 
 nav ul li ul li {
-    width: 90px;
+    width: 115px;
     border-radius: 4px;
 }
 
 nav ul li ul li a {
-    padding: 8px 16px;
+    padding: 4px 8px;
 }
 
 nav ul li ul li a:hover {

@@ -1,0 +1,232 @@
+<!--
+*****************************************************************************
+
+Title:  Projects Page
+
+Use:  Project artifacts page for ISLT portfolio.
+
+Author:  Joseph Kim
+
+School:  University of Missouri
+
+Class: ISLT 7355 Web Design & Development | Summer 2021
+
+Developed: July 2021
+
+Tested:  July 18, 2021; Passed on Firefox and Chrome browsers.
+
+Change Log:
+-Added responsive navigation bar.
+-Added grid css layout.
+-Added multiple screen size media queries.
+-Added dropdown menu links.
+-Added footer images.
+-Added font formatting for headers and paragraphs.
+-Added favicon.
+-Added competencies and artifacts.
+
+******************************************************************************
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+               <meta charset="utf-8">
+               <link rel="preconnect" href="https://fonts.googleapis.com">
+               <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+               <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Lora:ital@1&display=swap" rel="stylesheet">
+               <meta name="viewport" content="width=device-width, initial-scale=1">
+               <link rel="stylesheet" href="style.css">
+               <link rel="stylesheet" href="nav.css">
+               <title>Joseph Kim's ISLT Portfolio</title>
+               <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation Start -->
+        <nav>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a class="active" href="projects.html">PROJECTS</a>
+                    <ul>
+                        <li class="no-mobile"><a href="projects.html#competency1">Competency 1</a></li>
+                        <li class="no-mobile"><a href="projects.html#competency2">Competency 2</a></li>
+                        <li class="no-mobile"><a href="projects.html#competency3">Competency 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="reflection.html">REFLECTION</a></li>
+                <li class="lastMobile"><a href="#contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    <!-- Navigation End -->
+    
+    <main>
+    <!-- Grid Start -->
+    <div class="grid">
+        <div class="box1"> 
+            <h1 class="ChangeClassDarkGreen font-header">Projects</h1>
+        </div>
+
+        <div class="box2">
+            <h2 class="ChangeClassGreen font-header" id="competency1">Competency 1</h2>
+            <p class="font-para">To provide students with experiences to develop theory-grounded and research-based competencies for the innovative, aesthetic, effective and sustainable design/development and management of technologies for learning opportunities and systems.</p>
+            <h3 class="ChangeClassGreen font-header">Artifact: Japanese Meal Etiquette</h3>
+            <p class="font-para">
+                Course: ISLT 7383 Rapid Development Tools for Online Learning<br />
+                Artifact: An interactive module designed teaching Japanese meal etiquette customs for first time English teachers in Japan.
+            </p>
+            <p class="font-para">
+                Since the English language is popular in Japan, many English language centers hire foreigners to teach English. For non-natives in Japan, learning the many social customs of the country can be a daunting endeavor. This interactive training module aims to teach basic Japanese social customs for aspiring English language instructors preparing to live in Japan for the first time.
+            </p>
+            <p class="font-para">
+                This learning module was designed in Adobe Captivate as a project in the ISLT 7383 course, Rapid Development Tools for Online Learning.
+            </p>
+            <p class="font-para">
+                Objectives for this module include:
+            </p>
+            <ul class="font-para">
+                <li>After reading and watching videos, the learner will be able to identify Japanese honorific differences in speech and physical gestures in relating with older, peer, and younger students.</li>
+                <li>Given video and audio examples, the learner will be able to recognize common greetings in the workplace, at an acquaintance's home, and at restaurants.</li>
+            </ul>
+            <p class="font-para">
+                Assessments:
+            </p>
+            <ul class="font-para">
+                <li>A scenario-based quiz where the learner assumes the role of a newly hired English teacher having a meal at a restaurant with the English institute’s staff.</li>
+                <li>Quiz questions entail multiple choice answers in various situations that unfold at the restaurant.</li>
+            </ul>
+            <h3 class="ChangeClassGreen font-header">Reflections</h3>
+            <p class="font-para">
+                Strengths include:
+            </p>
+            <ul class="font-para">
+                <li>Usage of actual images within a Japanese restaurant</li>
+                <li>Usage of videos of native Japanese speakers</li>
+                <li>Usage of common Japanese meal etiquette scenarios</li>
+                <li>A scenario-based quiz assessment</li>
+            </ul>
+            <p class="font-para">
+                Weaknesses include:
+            </p>
+            <ul class="font-para">
+                <li>The learning module does not contain a detailed preview of learning objectives.</li>
+                <li>The learning module does not contain a menu of lessons.</li>
+            </ul>
+            <p class="font-para">
+                The following entail reflections on how I would create this learning module differently. I would include a menu of lessons and accompanying learning objectives at the start of the learning module. This would allow learners to know what to expect as they start the module, and select to either progress through the entire module or to selectively focus on lessons they are interested in.
+            </p>
+        </div>
+
+        <div class="box3">
+            <h2 class="ChangeClassGreen font-header">Artifact 1</h2>
+            <p><a target="_blank" href="artifacts/Artifact1%20-%20Japanese%20Meal%20Etiquette.pdf"><img src="artifacts/Artifact1%20-%20Preview.png" alt="Preview of Artifact 1: Japanese Meal Etiquette"></a></p>
+        </div>
+
+        <div class="box4">
+            <h2 class="ChangeClassGreen font-header" id="competency2">Competency 2</h2>
+            <p class="font-para">To provide students with experiences to develop skills in data collection, analysis and evaluation for reflecting on and applying to the design/development of learning opportunities and systems.</p>
+            <h3 class="ChangeClassGreen font-header">Artifact: Performance Analysis Worksheet</h3>
+            <p class="font-para">Course: ISLT 9474 Needs Assessment for Learning and Performance
+                <br />
+            Artifact: A Performance Analysis Worksheet
+            </p>
+            <p class="font-para">
+                The Performance Analysis Worksheet considers a registration department of a university’s graduate program. The registration department’s duties entail providing registration services for new and continuing students in our Online program. Each term is 10 weeks in duration, which can create a crammed registration experience for both the staff and for the students.
+            </p>
+            <p class="font-para">
+                The worksheet focuses on the performance problem of students attaining Priority Registration status, which is the department’s category of students who have the privilege of an early registration date. If more returning students can obtain Priority Registration status, there will be increased satisfaction for both students and staff.
+            </p>
+            <h3 class="ChangeClassGreen font-header">Reflections</h3>
+            <p class="font-para">
+                Strengths include:
+            </p>
+            <ul class="font-para">
+                <li>Detailed questions that aim to identify specific causes that led to a student’s attainment or unattainment of Priority Registration Status.</li>
+            </ul>
+            <p class="font-para">
+                Weaknesses include:
+            </p>
+            <ul class="font-para">
+                <li>The length of the survey may cause a lack of response from students.</li>
+            </ul>
+            <p class="font-para">
+                How would I do it differently now?
+            </p>
+            <p class="font-para">
+                Since a higher quantity of student survey responses would be more valuable than fewer survey responses, I would reduce the 10 question survey to be 3 key questions. By advertising the survey as a short 3 question survey, along with a reward incentive, such as a raffle or a prize for students who submit a survey, it may evoke a higher quantity of responses from students.
+            </p>
+        </div>
+
+        <div class="box5">
+            <h2 class="ChangeClassGreen font-header">Artifact 2: Performance Analysis Worksheet</h2>
+            <p><a target="_blank" href="artifacts/Artifact2%20-%20Performance%20Analysis%20Worksheet.pdf"><img src="artifacts/Artifact2%20-%20Preview.png" alt="Preview of Artifact 2: Performance Analysis Worksheet"></a></p>
+        </div>
+
+        <div class="box6">
+            <h2 class="ChangeClassGreen font-header" id="competency3">Competency 3</h2>
+            <p class="font-para">To provide students with experiences to become socially responsible, reflective/sensitive on the interaction of technologies & society and act ethically in response to current and future challenges of emerging technologies for learning.</p>
+            <h3 class="ChangeClassGreen font-header">Artifact: Customized OSCQR Rubric</h3>
+            <p class="font-para">Course: ISLT 9480 Internship in Information Science & Learning Technologies<br />
+                Artifact: A rubric to assess an online course's quality.
+            </p>
+            <p class="font-para">
+                In my ISLT 9480 Internship course, I chose to develop a customized OSCQR Rubric to review online courses at Azusa Pacific University. This artifact involved drawing online course quality standards from two publicly available course quality rubrics, and tailoring the rubric to suit the online course quality review needs at Azusa Pacific University. The tailored rubric was designed to review the quality of the university’s Online Asynchronous and Online Synchronous courses. This proposal served a real need for Azusa Pacific University's new online course review process. The result kept OSCQR's five quality domains of: Syllabus, Course Design, Interaction, Assessment, and Accessibility. Certain standards were rephrased, re-worded, re-grouped, removed, or added, in collaboration with the Director of Online Learning.
+            </p>
+            <p class="font-para">
+                The customized OSCQR Rubric meets Competency 3 by promoting quality improvement of online courses to program directors and instructors, thereby improving the future online student and instructor experiences in these courses. The instrument seeks to improve aspects of the online course’s syllabus, course design, interaction, assessments, and accessibility, which in turn should improve the experience of both students and instructors. The accessibility standards addressed by the rubric considers the experience of online students with disabilities, and promotes ADA compliance for a variety of course standards.
+            </p>
+            <p class="font-para">
+                The customized rubric drew inspiration from two rubrics - the Online Learning Consortium’s OSCQR Course Design Review Rubric version 3.1, and the Online Education Initiative’s Course Design Rubric (April 2020 version). Both of these rubrics allowed use and modification under their Creative Commons Attribution 4.0 International licensing. 
+            </p>
+            <h3 class="ChangeClassGreen font-header">Reflections</h3>
+            <p class="font-para">
+                Strengths include:
+            </p>
+            <p class="font-para">
+                The strength of the customized OSCQR rubric is that it draws from two nationally recognized online course quality rubrics, both of which have past and present implementation. The rubric builds on working rubrics vetted and used by faculty, program directors, and instructional designers. Standards found in the rubric’s Syllabus, Course Design, Interaction, and Assessment sections are adapted from the Online Learning Consortium's OSCQR Course Design Review Rubric version 3.1. Standards in the Accessibility section are adapted from both the Online Education Initiative's (OEI) Course Design Rubric, April 2020 version, and the OSCQR Course Design Review Rubric.
+            </p>
+            <p class="font-para">
+                Weaknesses include:
+            </p>
+            <ul class="font-para">
+                <li>The broad scope of standards included, which contribute to a time-consuming review process.</li>
+                <li>The review notes and recommendations are reviewed by an Instructional Designer only.</li>
+                <li>The rubric can be used by faculty, but successful use requires in-depth knowledge of the quality standards. Instructors can use the rubric to peer-review each other's online courses, but requires an understanding of the quality standards for accurate peer-reviews.</li>
+            </ul>
+            <p class="font-para">
+                Materials Used:
+            </p>
+            <ul class="font-para">
+                <li>Google Sheets</li>
+                <li>Online Learning Consortium's OSCQR Course Design Review Rubric version 3.1</li>
+                <li>Online Education Initiative's (OEI) Course Design Rubric, April 2020 version</li>
+            </ul>
+        </div>
+
+        <div class="box7">
+            <h2 class="ChangeClassGreen font-header">Artifact 3: Customized OSCQR Rubric</h2>
+            <p><a target="_blank" href="artifacts/Artifact3%20-%20Customized%20OSCQR%20Rubric.pdf"><img src="artifacts/Artifact3%20-%20Preview.png" alt="Preview of Artifact 3: Customized OSCQR Rubric"></a></p>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="footer-box">
+            <p class="font-para"><br /><br />
+            © 2021 Joseph Kim &nbsp;| &nbsp;
+            <a href="mailto:jhkdk4@mail.missouri.edu">
+                <img class="icon" src="images/email_icon.png" alt="Email icon">
+                jhkdk4@mail.missouri.edu</a> &nbsp;| &nbsp;
+            <img class="icon" src="images/phone_icon.png" alt="Phone icon"> 012.345.6789
+            <p id="footer-hiddentext" class="font-para">
+                <a target="_blank" href="https://icons8.com/icon/85500/mail">Mail</a> and 
+                <a target="_blank" href="https://icons8.com/icon/jShwZ2RCyPSO/phone">phone</a>
+                icons by Icons8. Bulb image created with <a target="_blank" href="https://www.canva.com">canva.com</a>.
+            </p>
+        </footer> 
+
+    </div>
+    <!-- Grid End -->
+    </main>
+</body>
+</html>
