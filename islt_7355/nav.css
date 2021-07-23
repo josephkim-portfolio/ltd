@@ -4,6 +4,7 @@
 /* Change Log: 
 -Added responsive nav bar. 
 -Adjusted nav height + nav ul margin right side.
+-Adjust margin 0 to drop down (nav ul li ul).
 */
 
 /* Label inspired by: https://youtu.be/xMTs8tAapnQ */
@@ -62,6 +63,7 @@ nav ul li ul {
     display: none;
     position: absolute;
     background-color: #282828;
+    margin: 0;
     padding: 7px;
     border-radius: 0px 0px 4px 4px;
 }
@@ -76,7 +78,7 @@ nav ul li ul li {
 }
 
 nav ul li ul li a {
-    padding: 4px 8px;
+    padding: 10px 8px;
 }
 
 nav ul li ul li a:hover {
