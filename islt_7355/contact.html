@@ -1,9 +1,9 @@
-﻿<!--
+<!--
 *****************************************************************************
 
-Title:  Home Page
+Title:  Contact Page
 
-Use:  Landing page for ISLT portfolio.
+Use:  Project artifacts page for ISLT portfolio.
 
 Author:  Joseph Kim
 
@@ -13,17 +13,7 @@ Class: ISLT 7355 Web Design & Development | Summer 2021
 
 Developed: July 2021
 
-Tested:  July 18, 2021; Passed on Firefox and Chrome browsers.
-
-Change Log:
--Added responsive navigation bar.
--Added grid css layout.
--Added multiple screen size media queries.
--Added footer icons, footer background, favicon.
--Added nav dropdown menu links.
--Added footer images.
--Added font formatting for headers and paragraphs.
-Added favicon.
+Tested:  July 22, 2021; Passed on Firefox and Chrome browsers.
 
 ******************************************************************************
 -->
@@ -38,7 +28,7 @@ Added favicon.
                <meta name="viewport" content="width=device-width, initial-scale=1">
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
-               <title>Joseph Kim's ISLT Portfolio</title>
+               <title>Contact</title>
                <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
@@ -47,7 +37,7 @@ Added favicon.
             <label for="toggle">&#9776;</label>
             <input type="checkbox" id="toggle"/>
             <ul>
-                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="projects.html">PROJECTS</a>
                     <ul>
@@ -57,33 +47,28 @@ Added favicon.
                     </ul>
                 </li>
                 <li><a href="reflection.html">REFLECTION</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a class="active" href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
-        <!-- Navigation End -->
-
-        <main>
+    <!-- Navigation End -->
+    <main>
         <!-- Grid Start -->
         <div class="grid">
-            <div class="box1">
-                <header>
-                    <h1 class="ChangeClassDarkGreen font-header">Joseph's ISLT Portfolio</h1>
-                </header>
-            </div>
-            
-            <div class="box3">
-                <img src="Home%20image.png" alt="Decorative image conveying a digital learning environment. Image contains 3 cartoon students around a web browser and shapes.">
+            <div class="box1"> 
+                <h1 class="ChangeClassDarkGreen font-header">Contact</h1>
             </div>
 
-            <div class="box2">
-                <h2 class="ChangeClassGreen font-header">Welcome!</h2>
-                <p class="font-para">This portfolio showcases selected artifacts developed throughout my Educational Specialist in the Information Science and Learning Technologies (ISLT) program at the University of Missouri. Graduates of the program must demonstrate three competencies by the end of their coursework. For each competency, one relevant artifact shall be showcased, with an accompanying reflection.</p>
-            </div>
+            <div class="boxcenter font-para">
+                <p>Let's connect!</p><br />
+               <form action="mailto:jhkdk4@mail.missouri.edu?Subject=Portfolio%20Website%20Contact" method="post" enctype="text/plain">
+                    First Name: <input type="text" id="firstname" name="firstname" required autofocus><br />
+                    Last Name: <input type="text" id="lastname" name="lastname" required><br />
+                    Email Address: <input type="email" id="email" required><br />
+                    Message: <textarea id="message" name="message" required></textarea><br />
+                    <input type="submit" id="submit" value="Submit">
+                </form>
+           </div>
 
-            <div class="box4">
-                <p class="font-para">To learn more about my professional goals and education, visit my About page. The Projects page will showcase artifacts I have crafted throughout my ISLT program and how they align with the program’s competencies. The Reflection page will chronicle my career journey to the field of instructional design for higher education. Please feel free to reach me via my Contact page.</p>
-            </div>
-        
         <!-- Footer -->
         <footer class="footer-box">
             <p class="font-para"><br /><br />
@@ -98,9 +83,8 @@ Added favicon.
                 icons by Icons8. Bulb image created with <a target="_blank" href="https://www.canva.com">canva.com</a>.
             </p>
         </footer> 
-
-        </div> 
-    <!-- Grid End -->
+    </div>
+<!-- Grid End -->
     </main>
 </body>
 </html>

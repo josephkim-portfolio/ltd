@@ -14,6 +14,7 @@ Change Log:
 -Added margins to each grid box. Removed grid-gap.
 -Added ease to footer icons.
 -Added table styling for table on projects page.
+-Added form styling for contact page.
 
 Tested:  July 22, 2021; Passed on Firefox and Chrome browsers.
 
@@ -339,4 +340,15 @@ table tr:nth-child(even) {
         font-size: 120%;
     }
     */
+}
+
+/* Form style on contact page */
+form input {
+    display: block;
+}
+
+form textarea {
+    display: block;
+    width: 7cm;
+    height: 4cm;
 }
