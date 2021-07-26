@@ -13,7 +13,7 @@ Class: ISLT 7355 Web Design & Development | Summer 2021
 
 Developed: July 2021
 
-Tested:  July 22, 2021; Passed on Firefox and Chrome browsers.
+Tested:  July 25, 2021; Passed on Firefox and Chrome browsers.
 
 Change Log:
 -Added responsive navigation bar.
@@ -25,6 +25,10 @@ Change Log:
 -Added favicon.
 -Added competencies and artifacts.
 -Added table.
+-Included page links to table.
+-Added note to click image for full artifact.
+-Included explicit authorship note for each artifact.
+-Edited Artifact2 - Preview image.
 
 ******************************************************************************
 -->
@@ -39,7 +43,7 @@ Change Log:
                <meta name="viewport" content="width=device-width, initial-scale=1">
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
-               <title>Joseph Kim's ISLT Portfolio</title>
+               <title>Projects</title>
                <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
@@ -69,11 +73,11 @@ Change Log:
         <div class="box1"> 
             <h1 class="ChangeClassDarkGreen font-header">Projects</h1>
             <figure>
-                <table>
+                <p class="font-para">Click on the following links to navigate to a specific section:</p>
+                <table class="tablecenter">
                     <thead class="font-para">
                         <tr>
                             <th scope="col">Class</th>
-                            <th scope="col">Instructor</th>
                             <th scope="col">Competency</th>
                             <th scope="col">Artifact</th>
                         </tr>
@@ -81,30 +85,27 @@ Change Log:
                     <tbody class="font-para">
                         <tr>
                             <td class="responsiveheader">ISLT 7383 Rapid Development Tools for Online Learning</td>
-                            <td>David Reid</td>
-                            <td>Competency 1</td>
-                            <td>Japanese Meal Etiquette Interactive Module</td>
+                            <td><a href="projects.html#competency1">Competency 1</a></td>
+                            <td><a href="projects.html#artifact1">Japanese Meal Etiquette Interactive Module</a></td>
                         </tr>
                         <tr class="font-para">
                             <td class="responsiveheader">ISLT 9474 Needs Assessment for Learning and Performance</td>
-                            <td>Rose Marra</td>
-                            <td>Competency 2</td>
-                            <td>Performance Analysis Worksheet</td>
+                            <td><a href="projects.html#competency2">Competency 2</a></td>
+                            <td><a href="projects.html#artifact2">Performance Analysis Worksheet</a></td>
                         </tr>
                         <tr>
                             <td class="responsiveheader">ISLT 9480 Internship in Information Science & Learning Technologies</td>
-                            <td>Aimee Klimczak</td>
-                            <td>Competency 3</td>
-                            <td>Customized OSCQR Rubric</td>
+                            <td><a href="projects.html#competency3">Competency 3</a></td>
+                            <td><a href="projects.html#artifact3">Customized OSCQR Rubric</a></td>
                         </tr>
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="4"></td>
+                            <td colspan="3"></td>
                         </tr>
                     </tfoot>
                 </table>
-                <figcaption class="visible-hidden font-header">Table provides information on the courses, instructors, competencies, and artifacts.</figcaption>
+                <figcaption class="visible-hidden font-header">Table provides information on the courses, competencies, and artifacts.</figcaption>
             </figure>
         </div>
 
@@ -112,15 +113,16 @@ Change Log:
             <h2 class="ChangeClassGreen font-header" id="competency1">Competency 1</h2>
             <p class="font-para">To provide students with experiences to develop theory-grounded and research-based competencies for the innovative, aesthetic, effective and sustainable design/development and management of technologies for learning opportunities and systems.</p>
             <h3 class="ChangeClassGreen font-header">Artifact: Japanese Meal Etiquette</h3>
+            <ul class="font-para">
+                <li><b>Course:</b> &nbsp;ISLT 7383 Rapid Development Tools for Online Learning</li>
+                <li><b>Artifact:</b> &nbsp;Screen images from an interactive module that I designed in Adobe Captivate 9. The interactive module teaches Japanese meal etiquette to first time English teachers in Japan.</li>
+                <li><b>Author:</b> &nbsp;Joseph Kim, November 2017</li>
+            </ul>
             <p class="font-para">
-                Course: ISLT 7383 Rapid Development Tools for Online Learning<br />
-                Artifact: An interactive module designed teaching Japanese meal etiquette customs for first time English teachers in Japan.
+                I designed and developed this learning module in Adobe Captivate as a project in the ISLT 7383 course, Rapid Development Tools for Online Learning.
             </p>
             <p class="font-para">
                 Since the English language is popular in Japan, many English language centers hire foreigners to teach English. For non-natives in Japan, learning the many social customs of the country can be a daunting endeavor. This interactive training module aims to teach basic Japanese social customs for aspiring English language instructors preparing to live in Japan for the first time.
-            </p>
-            <p class="font-para">
-                This learning module was designed in Adobe Captivate as a project in the ISLT 7383 course, Rapid Development Tools for Online Learning.
             </p>
             <p class="font-para">
                 Objectives for this module include:
@@ -159,7 +161,8 @@ Change Log:
         </div>
 
         <div class="box3">
-            <h2 class="ChangeClassGreen font-header">Artifact 1</h2>
+            <h2 class="ChangeClassGreen font-header" id="artifact1">Artifact 1</h2>
+            <p class=font-para>Click on the image to view the full artifact:</p>
             <p><a target="_blank" href="artifacts/Artifact1%20-%20Japanese%20Meal%20Etiquette.pdf"><img src="artifacts/Artifact1%20-%20Preview.png" alt="Preview of Artifact 1: Japanese Meal Etiquette"></a></p>
         </div>
 
@@ -167,12 +170,13 @@ Change Log:
             <h2 class="ChangeClassGreen font-header" id="competency2">Competency 2</h2>
             <p class="font-para">To provide students with experiences to develop skills in data collection, analysis and evaluation for reflecting on and applying to the design/development of learning opportunities and systems.</p>
             <h3 class="ChangeClassGreen font-header">Artifact: Performance Analysis Worksheet</h3>
-            <p class="font-para">Course: ISLT 9474 Needs Assessment for Learning and Performance
-                <br />
-            Artifact: A Performance Analysis Worksheet
-            </p>
+            <ul class="font-para">
+                <li><b>Course:</b> &nbsp;ISLT 9474 Needs Assessment for Learning and Performance</li>
+                <li><b>Artifact:</b> &nbsp;A Performance Analysis Worksheet</li>
+                <li><b>Author:</b> &nbsp;Joseph Kim, November 2016</li>
+            </ul>
             <p class="font-para">
-                The Performance Analysis Worksheet considers a registration department of a university’s graduate program. The registration department’s duties entail providing registration services for new and continuing students in our Online program. Each term is 10 weeks in duration, which can create a crammed registration experience for both the staff and for the students.
+                I completed this Performance Analysis Worksheet following Dr. Rose Marra's template. It considers the registration department of a university’s graduate program. The registration department’s duties entail providing registration services for new and continuing students in our Online program. Each term is 10 weeks in duration, which can create a crammed registration experience for both the staff and for the students.
             </p>
             <p class="font-para">
                 The worksheet focuses on the performance problem of students attaining Priority Registration status, which is the department’s category of students who have the privilege of an early registration date. If more returning students can obtain Priority Registration status, there will be increased satisfaction for both students and staff.
@@ -199,7 +203,8 @@ Change Log:
         </div>
 
         <div class="box5">
-            <h2 class="ChangeClassGreen font-header">Artifact 2: Performance Analysis Worksheet</h2>
+            <h2 class="ChangeClassGreen font-header" id="artifact2">Artifact 2: Performance Analysis Worksheet</h2>
+            <p class=font-para>Click on the image to view the full artifact:</p>
             <p><a target="_blank" href="artifacts/Artifact2%20-%20Performance%20Analysis%20Worksheet.pdf"><img src="artifacts/Artifact2%20-%20Preview.png" alt="Preview of Artifact 2: Performance Analysis Worksheet"></a></p>
         </div>
 
@@ -207,9 +212,11 @@ Change Log:
             <h2 class="ChangeClassGreen font-header" id="competency3">Competency 3</h2>
             <p class="font-para">To provide students with experiences to become socially responsible, reflective/sensitive on the interaction of technologies & society and act ethically in response to current and future challenges of emerging technologies for learning.</p>
             <h3 class="ChangeClassGreen font-header">Artifact: Customized OSCQR Rubric</h3>
-            <p class="font-para">Course: ISLT 9480 Internship in Information Science & Learning Technologies<br />
-                Artifact: A rubric to assess an online course's quality.
-            </p>
+            <ul class="font-para">
+                <li><b>Course:</b> &nbsp;ISLT 9480 Internship in Information Science & Learning Technologies</li>
+                <li><b>Artifact:</b> &nbsp;A rubric to assess an online course's quality.</li>
+                <li><b>Author:</b> &nbsp;Joseph Kim, July 2020</li>
+            </ul>
             <p class="font-para">
                 In my ISLT 9480 Internship course, I chose to develop a customized OSCQR Rubric to review online courses at Azusa Pacific University. This artifact involved drawing online course quality standards from two publicly available course quality rubrics, and tailoring the rubric to suit the online course quality review needs at Azusa Pacific University. The tailored rubric was designed to review the quality of the university’s Online Asynchronous and Online Synchronous courses. This proposal served a real need for Azusa Pacific University's new online course review process. The result kept OSCQR's five quality domains of: Syllabus, Course Design, Interaction, Assessment, and Accessibility. Certain standards were rephrased, re-worded, re-grouped, removed, or added, in collaboration with the Director of Online Learning.
             </p>
@@ -245,7 +252,8 @@ Change Log:
         </div>
 
         <div class="box7">
-            <h2 class="ChangeClassGreen font-header">Artifact 3: Customized OSCQR Rubric</h2>
+            <h2 class="ChangeClassGreen font-header" id="artifact3">Artifact 3: Customized OSCQR Rubric</h2>
+            <p class=font-para>Click on the image to view the full artifact:</p>
             <p><a target="_blank" href="artifacts/Artifact3%20-%20Customized%20OSCQR%20Rubric.pdf"><img src="artifacts/Artifact3%20-%20Preview.png" alt="Preview of Artifact 3: Customized OSCQR Rubric"></a></p>
         </div>
         
@@ -260,7 +268,10 @@ Change Log:
             <p id="footer-hiddentext" class="font-para">
                 <a target="_blank" href="https://icons8.com/icon/85500/mail">Mail</a> and 
                 <a target="_blank" href="https://icons8.com/icon/jShwZ2RCyPSO/phone">phone</a>
-                icons by Icons8. Bulb image created with <a target="_blank" href="https://www.canva.com">canva.com</a>.
+                icons by Icons8.
+            </p>
+            <p id="footer-bulbcite" class="font-para">
+                Bulb image created with <a target="_blank" href="https://www.canva.com">Canva</a>.
             </p>
         </footer> 
 

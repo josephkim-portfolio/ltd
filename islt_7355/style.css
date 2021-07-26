@@ -15,8 +15,11 @@ Change Log:
 -Added ease to footer icons.
 -Added table styling for table on projects page.
 -Added form styling for contact page.
+-Adjusted grid box margins.
+-Adjusted media queries for image sizing.
+-Tweaked styling.
 
-Tested:  July 22, 2021; Passed on Firefox and Chrome browsers.
+Tested:  July 25, 2021; Passed on Firefox and Chrome browsers.
 
 ***************************************************
 */
@@ -72,6 +75,11 @@ h4.FirstLetter::first-letter {
     grid-template-columns: [content-start] 2fr [content-end];
     grid-template-rows: auto [content-start] auto [content-end];
     /* grid-gap: 20px |Using margin per box instead.|*/
+}
+
+img {
+    max-width: 80%;
+    height: auto;
 }
 
 /* Multiple screen size Media Queries START. Inspired by: https://youtu.be/fA1NW-T1QXc */
@@ -163,12 +171,7 @@ h4.FirstLetter::first-letter {
     .grid{
         width:100%;
     }
-    #left-column{
-        width:70%;
-    }
-    #right-column{
-        width:30%;
-    }
+
     img{
         width:60%;
         height: auto;
@@ -176,21 +179,25 @@ h4.FirstLetter::first-letter {
 }
 
 @media screen and (max-width:640px){
-    #left-column{
-        width:100%;
+    #home-img{
+        width:60%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
-    #right-column{
-        width:100%;
-    }
-    img{
-        width:30%;
+    #about-profile-img{
+        width:32%;
         height: auto;
     }
     .grid{
-        font-size: 85%;
+        font-size: 80%;
     }
     footer{
         font-size: 85%;
+    }
+    #footer-bulbcite {
+        display: none;
     }
 }
 
@@ -199,20 +206,23 @@ h4.FirstLetter::first-letter {
         width:320px;
         font-size: 75%;
     }
-    img{   
-        width:30%;
+    #home-img{
+        width:80%;
         height: auto;
+    }
+    #about-profile-img{
+        width:40%;
+        height: auto;
+        float: left;
     }
     footer{
         font-size: 75%;
     }
+    #footer-bulbcite {
+        display: none;
+    }
 }
 /* Multiple screen size Media Queries END */
-
-img {
-    max-width: 80%;
-    height: auto;
-}
 
 /* Print adjustments */
 
@@ -317,7 +327,15 @@ table tr:nth-child(even) {
 
 /* Table style when screen < 640px */
 @media screen and (max-width:640px) {
-    
+    .tablecenter {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .visible-hidden {
+        text-align:center;
+    }
+
     .responsiveheader {
     display: block;
     background-color: #282828;
