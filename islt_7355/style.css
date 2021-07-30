@@ -18,8 +18,11 @@ Change Log:
 -Adjusted grid box margins.
 -Adjusted media queries for image sizing.
 -Tweaked styling.
+-Tweaked .footer-box font size smaller on all media query screen sizes.
+-Applied border-radius to #about-profile-img
+-Reduced margin
 
-Tested:  July 25, 2021; Passed on Firefox and Chrome browsers.
+Tested:  July 29, 2021; Passed on Firefox and Chrome browsers.
 
 ***************************************************
 */
@@ -44,7 +47,7 @@ Tested:  July 25, 2021; Passed on Firefox and Chrome browsers.
     max-width:960px;
     font-family: 'Bad Script', cursive;
     text-shadow:1px 1px 0 rgba(0,0,0,.2);
-    text-align:center;
+    text-align:left;
 }
 
 .icon {
@@ -82,6 +85,13 @@ img {
     height: auto;
 }
 
+#about-profile-img {
+    border-radius: 8px;
+    max-width: 100%;
+    width: 30%;
+    height: auto;
+}
+
 /* Multiple screen size Media Queries START. Inspired by: https://youtu.be/fA1NW-T1QXc */
 @media screen and (min-width: 640px) {
     .grid {
@@ -106,7 +116,7 @@ img {
         grid-row: 2;
         align-self: start;
         justify-self: stretch;
-        margin: 30px;
+        margin: 5px 35px 2px 15px;
     }
    
     .box3 {
@@ -114,7 +124,7 @@ img {
         grid-row: 2;
         align-self: start;
         justify-self: stretch;
-        margin: 30px;
+        margin: 5px 35px 2px 15px;
     }
     
     .box4 {
@@ -122,7 +132,7 @@ img {
         grid-row: 3;
         align-self: start;
         justify-self: stretch;
-        margin: 30px;
+        margin: 5px 35px 2px 15px;
     }
 
     .box5 {
@@ -130,7 +140,7 @@ img {
         grid-row: 3;
         align-self: start;
         justify-self: stretch;
-        margin: 30px;
+        margin: 5px 35px 2px 15px;
     }
 
     .box6 {
@@ -138,7 +148,7 @@ img {
         grid-row: 4;
         align-self: start;
         justify-self: stretch;
-        margin: 30px;
+        margin: 5px 35px 2px 15px;
     }
 
     .box7 {
@@ -146,7 +156,7 @@ img {
         grid-row: 4;
         align-self: start;
         justify-self: stretch;
-        margin: 30px;
+        margin: 5px 35px 2px 15px;
     }
 
     .footer-box {
@@ -159,6 +169,8 @@ img {
         background-repeat: no-repeat;
         background-size: 140px 50px;
         background-position: top;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: smaller;
     }
 
     footer img:hover {
@@ -172,8 +184,12 @@ img {
         width:100%;
     }
 
-    img{
-        width:60%;
+    .footer-box{
+        font-size: 80%;
+    }
+
+    #about-profile-img{
+        width:45%;
         height: auto;
     }
 }
@@ -193,8 +209,8 @@ img {
     .grid{
         font-size: 80%;
     }
-    footer{
-        font-size: 85%;
+    .footer-box{
+        font-size: 75%;
     }
     #footer-bulbcite {
         display: none;
@@ -215,7 +231,7 @@ img {
         height: auto;
         float: left;
     }
-    footer{
+    .footer-box{
         font-size: 75%;
     }
     #footer-bulbcite {

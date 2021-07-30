@@ -13,7 +13,7 @@ Class: ISLT 7355 Web Design & Development | Summer 2021
 
 Developed: July 2021
 
-Tested:  July 25, 2021; Passed on Firefox and Chrome browsers.
+Tested:  July 29, 2021; Passed on Firefox and Chrome browsers.
 
 Change Log:
 -Added responsive navigation bar.
@@ -23,9 +23,10 @@ Change Log:
 -Added nav dropdown menu links.
 -Added footer images.
 -Added font formatting for headers and paragraphs.
-Added favicon.
+-Added favicon.
 -Added image citation to footer.
 -Edited decoraive image.
+-Added Fly-in Header script for h1.
 
 ******************************************************************************
 -->
@@ -69,7 +70,44 @@ Added favicon.
         <div class="grid">
             <div class="box1">
                 <header>
-                    <h1 class="ChangeClassDarkGreen font-header">Joseph's ISLT Portfolio</h1>
+                    <!-- Fly-in Header Script Source: http://www.javascriptkit.com/script/script2/flyinheader.shtml-->
+                    <script>
+                        //set style for NS4 to ''
+                        if (document.layers)
+                        var ns4def=''
+                        </script>
+                        
+                        <h1 class="ChangeClassDarkGreen font-header" id="flyin" style="position:relative;left:-800px;font-style:italic" style=&{ns4def};>Joseph's ISLT Portfolio</h1>
+                        
+                        
+                        <script language="JavaScript1.2">
+                        
+                        /*
+                        Fly-in Header script (credit must stay enclosed)
+                        By javascriptkit.com
+                        For this and over 400+ JavaScripts,
+                        Visit http://www.javascriptkit.com
+                        */
+                        
+                        
+                        if (document.getElementById||document.all)
+                        var crossheader=document.getElementById? document.getElementById("flyin").style : document.all.flyin.style
+                        
+                        function animatein(){
+                        if (parseInt(crossheader.left)<0)
+                        crossheader.left=parseInt(crossheader.left)+20+"px"
+                        else{
+                        crossheader.left=0
+                        crossheader.fontStyle="normal"
+                        clearInterval(start)
+                        }
+                        }
+                        
+                        if (document.getElementById||document.all)
+                        start=setInterval("animatein()",10)
+                        
+                    </script>
+                    <!-- Fly-in Header Script End-->    
                 </header>
             </div>
             
@@ -88,20 +126,20 @@ Added favicon.
         
         <!-- Footer -->
         <footer class="footer-box">
-            <p class="font-para"><br /><br />
+            <p><br /><br />
             © 2021 Joseph Kim &nbsp;| &nbsp;
             <a href="mailto:jhkdk4@mail.missouri.edu">
-                <img class="icon" src="images/email_icon.png" alt="Email icon">
-                jhkdk4@mail.missouri.edu</a> &nbsp;| &nbsp;
+                <img class="icon" src="images/email_icon.png" alt="Email icon"> jhkdk4@mail.missouri.edu</a> &nbsp;| &nbsp;
             <img class="icon" src="images/phone_icon.png" alt="Phone icon"> 012.345.6789
-            <p id="footer-hiddentext" class="font-para">
+            <p id="footer-hiddentext">
                 <a target="_blank" href="https://icons8.com/icon/85500/mail">Mail</a> and 
                 <a target="_blank" href="https://icons8.com/icon/jShwZ2RCyPSO/phone">phone</a>
-                icons by Icons8. Image of a web browser and 3 figures created with <a target="_blank" href="https://www.canva.com">Canva</a>.
+                icons by Icons8. | Decorative image created with <a target="_blank" href="https://www.canva.com">Canva</a>.
             </p>
-            <p id="footer-bulbcite" class="font-para">
+            <p id="footer-bulbcite">
                 Bulb image created with <a target="_blank" href="https://www.canva.com">Canva</a>.
             </p>
+            <p>Fly in script provided by <a href="http://javascriptkit.com">JavaScript Kit</a></p>
         </footer> 
 
         </div> 
