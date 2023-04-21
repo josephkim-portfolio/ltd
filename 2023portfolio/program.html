@@ -1,0 +1,116 @@
+<!--
+*****************************************************************************
+
+Title:  Reflection Page
+
+Use:  Career Reflections page for LTD portfolio.
+
+Author:  Joseph Kim
+
+School:  University of Missouri
+
+Tested:  2/23/2023; Passed on Firefox and Chrome browsers.
+
+Change Log:
+-Added responsive navigation bar.
+-Added grid css layout.
+-Added multiple screen size media queries.
+-Added footer icons, footer background, favicon.
+-Added nav dropdown menu links.
+-Added footer images.
+-Added font formatting for headers and paragraphs.
+-Added favicon.
+
+******************************************************************************
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+               <meta charset="utf-8">
+               <link rel="preconnect" href="https://fonts.googleapis.com">
+               <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+               <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Lora:ital@1&display=swap" rel="stylesheet">
+               <meta name="viewport" content="width=device-width, initial-scale=1">
+               <link rel="stylesheet" href="style.css">
+               <link rel="stylesheet" href="nav.css">
+               <title>Reflection</title>
+               <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+<!-- Navigation Start -->
+    <nav>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a class="active" href="program.html">PROGRAM</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="projects.html">PROJECTS</a>
+                    <ul>
+                        <li class="no-mobile"><a href="projects.html#competency1">Competency 1</a></li>
+                        <li class="no-mobile"><a href="projects.html#competency2">Competency 2</a></li>
+                        <li class="no-mobile"><a href="projects.html#competency3">Competency 3</a></li>
+                    </ul>
+                </li>
+            <li><a href="reflection.html">REFLECTION</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+<!-- Navigation End -->
+
+    <main>
+    <!-- Grid Start -->
+    <div class="grid">
+        <div class="box1">
+            <header>
+                <h1 class="ChangeClassDarkGreen font-header">Reflections and Professional Development Plan</h1>
+            </header>
+        </div>
+
+        <div class="boxcenter">
+            <h4 class="ChangeClassGreen FirstLetter font-header">PROGRAM REFLECTIONS</h4>
+            <p class="FirstLetter font-para">
+                I began my program as a part-time student in Fall 2016 with the goal of changing my career. Having worked in higher education for a number of years in various roles, I learned of a role that combined analysis, research, and leveraging best practices from the learning sciences to craft optimized learning experiences. Curiosity led to commitment, and I’m happy that I was privileged with the opportunity to switch into this career while pursuing studies at the University of Missouri.
+            </p>
+            <p class="Indent font-para">
+                In reflection, the program of study blended well competencies in analysis and project management, an array of design courses, and curriculum/pedagogical best practices. My learnings provided foundational knowledge in curriculum development, design, and in authoring tools. I appreciated most the balance between theory and practical skills to design, author, and create. The program’s portfolio and artifact culmination evidences this balance of foundational theory and practical, career-relevant deliverables.The endeavor of crafting meaningful learning experiences is a genuine love of mine, and my learnings throughout the Learning Technologies and Design program developed my knowledge and skillset in the field of instructional design.
+            </p>
+            <h4 class="ChangeClassGreen FirstLetter font-header">PROFESSIONAL DEVELOPMENT PLAN</h4>
+            <p class="Indent font-para">
+                My experiences in Instructional Design has mainly been in Higher Education academic contexts. I am interested in developing curriculum in the context of workplace Learning and Development. Additionally, I aim to broaden and deepen design and authoring skills in applications relevant to the field. Below entail my next professional development goals:
+              <ul>
+                <li class="Indent font-para">Competency Based Education - My LTD program emphasized the importance of well-defined learning outcomes and acceptable evidences (conveyed by the Understanding by Design approach). A outcomes-oriented model that is growing in popularity in K-12 and Higher Education settings is the Competency Based Education (CBE) model. I am interested in learning how a CBE model can apply in Higher Education and Learning and Development workplace learning contexts.
+                <br> 
+                <li class="Indent font-para">Articulate Storyline - Learning Adobe Captivate in my program was extremely practical and rewarding. An alternative authoring tool, Articulate Storyline, is a popular option with robust design features that I would like to learn and compare with Adobe Captivate.
+                <br>      
+                <li class="Indent font-para">Articulate Rise 360 - As part of the Articulate suite, Rise 360 is a web-based authoring tool that allows rapid-development of learning solutions, as it is template-based. Additionally, the platform highly values accessible features in its design, which is extremely needed for equitable learning in Higher Education and workplace settings.
+                <br>          
+                <li class="Indent font-para">Adobe Illustrator - At the end of my program, I find that graphic design skills is relevant to a variety of tasks for an Instructional Designer. I aim to learn Adobe Illustrator to utilize and manipulate visual character and objects to create scenarios for scenario-based e-learning.
+          </ul>
+            </p>
+        </div>
+    
+        <!-- Footer -->
+        <footer class="footer-box">
+            <p class="font-para"><br /><br />
+            © 2023 Joseph Kim &nbsp;| &nbsp;
+            <a href="mailto:jhkdk4@mail.missouri.edu">
+                <img class="icon" src="images/email_icon.png" alt="Email icon">
+                jhkdk4@mail.missouri.edu</a> &nbsp;| &nbsp;
+            <img class="icon" src="images/phone_icon.png" alt="Phone icon"> 012.345.6789
+            <p id="footer-hiddentext" class="font-para">
+                <a target="_blank" href="https://icons8.com/icon/85500/mail">Mail</a> and 
+                <a target="_blank" href="https://icons8.com/icon/jShwZ2RCyPSO/phone">phone</a>
+                icons by Icons8.
+            </p>
+            <p id="footer-bulbcite" class="font-para">
+                Bulb image created with <a target="_blank" href="https://www.canva.com">Canva</a>.
+            </p>
+        </footer> 
+    </div>
+<!-- Grid End -->
+    </main>
+</body>
+</html>
